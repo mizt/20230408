@@ -12,14 +12,14 @@ loadScript("twgl.js",()=>{
     const width = 1920;
     const height = 1080;
     const div = document.createElement("div");
-    Object.assign(div.style,{"display":"flex","width":"100vw","height":"100vh"});
+    Object.assign(div.style,{"display":"flex","width":"100vw","height":"100svh"});
     
     const canvas = document.createElement("canvas");
     Object.assign(canvas,{"width":width,"height":height});
     Object.assign(canvas.style,{"vertical-align":"top","outline":"1px solid #555"});
     const resize = (e)=>{
       Object.assign(canvas.style,(window.innerWidth/width<window.innerHeight/height)?{"width":"100vw","height":"auto","margin":"auto 0"}:
-        {"width":"auto","height":"100vh","margin":"0 auto"});
+        {"width":"auto","height":"100svh","margin":"0 auto"});
     }
     let tid = 0;
     window.addEventListener("resize",(e)=>{
